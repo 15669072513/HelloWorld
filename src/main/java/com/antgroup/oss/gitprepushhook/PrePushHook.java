@@ -117,26 +117,26 @@ public class PrePushHook{
         }
 
         //提交者白名单和repo白名单
-        if (remoteAddressValidator.validate(remoteAddress)) {
-            System.exit(0);
-        }else{
-            Long preHookLogId = doLog(remoteAddress, localRef);
-            //logDebug("doLog成功返回 id:" + preHookLogId);
-            boolean doRunResult = doRun(remoteAddress, localRef, remoteRef);
-            //logDebug("doRunResult成功 result:" + doRunResult);
-            if (preHookLogId !=null){
-                //logDebug("开始执行updateLog id:" + preHookLogId);
-                updateLog(preHookLogId);
-            }
-
-            if (doRunResult) {
-                System.err.println("代码中含有数据安全问题，请改造后再 Push。");
-                System.exit(-1);
-            } else {
-                System.exit(0);
-            }
-
-        }
+//        if (remoteAddressValidator.validate(remoteAddress)) {
+//            System.exit(0);
+//        }else{
+//            Long preHookLogId = doLog(remoteAddress, localRef);
+//            //logDebug("doLog成功返回 id:" + preHookLogId);
+//            boolean doRunResult = doRun(remoteAddress, localRef, remoteRef);
+//            //logDebug("doRunResult成功 result:" + doRunResult);
+//            if (preHookLogId !=null){
+//                //logDebug("开始执行updateLog id:" + preHookLogId);
+//                updateLog(preHookLogId);
+//            }
+//
+//            if (doRunResult) {
+//                System.err.println("代码中含有数据安全问题，请改造后再 Push。");
+//                System.exit(-1);
+//            } else {
+//                System.exit(0);
+//            }
+//
+//        }
 
 
     }
