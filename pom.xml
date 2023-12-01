@@ -222,7 +222,7 @@
                         </executions>
                         <configuration>
                             <verbose>true</verbose>
-                            <mainClass>org.example.Main</mainClass>
+                            <mainClass>com.antgroup.oss.gitprepushhook.PrePushHook</mainClass>
                             <buildArgs>
                                 -H:+AllowVMInspection
                                 --enable-all-security-services
