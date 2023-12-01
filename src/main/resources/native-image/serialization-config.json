@@ -1,0 +1,15 @@
+{
+  "types":[
+    {
+      "name":"int[]"
+    },
+    {
+      "name":"int[][]"
+    },
+    {
+      "name":"java.lang.Object[]"
+    }
+  ],
+  "lambdaCapturingTypes":[
+  ]
+}
