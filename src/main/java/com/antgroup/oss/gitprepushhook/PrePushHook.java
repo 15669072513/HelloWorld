@@ -105,7 +105,7 @@ public class PrePushHook{
     }
 
     //    @Override
-    public static void main(String... args) {
+    public static void main(String... args) throws IOException {
 
         System.out.println("PrePushHook version: " );
         init();
