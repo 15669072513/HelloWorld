@@ -137,9 +137,9 @@ public class PrePushHook{
 
             if (doRunResult) {
                 System.err.println("代码中含有数据安全问题，请改造后再 Push。");
-//                System.exit(-1);
+                System.exit(-1);
             } else {
-//                System.exit(0);
+                System.exit(0);
             }
 
         }
